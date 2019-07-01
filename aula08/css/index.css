@@ -1,0 +1,212 @@
+/* -- Regras Gerais Início -- */
+* {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+}
+
+/* -- Regras Gerais Fim -- */
+/* -- Estilo do Header -- */
+header {
+  height: 50px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0 0 8px #676767;
+}
+header .logo-content {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+header .logo-content img {
+  width: 10%;
+}
+
+header .container {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+header .container ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+header .container ul li {
+  list-style: none;
+}
+header .container ul .toggle-menu {
+  display: none;
+}
+.container ul li a {
+  text-decoration: none;
+  color: #000;
+}
+.container ul li a:hover {
+  text-decoration: underline;
+  color: #811b9b;
+}
+/* -- Estilo Home -- */
+.home-content {
+  width: 100%;
+  height: 100vh;
+}
+
+.home-content .image-banner {
+  background-image: url("../img/banner.jpg");
+  background-size: cover;
+  flex-direction: column;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  background-position: center;
+  color: white;
+}
+.home-content .image-banner h1 {
+  text-transform: capitalize;
+  font-size: 1em;
+  font-weight: lighter;
+}
+.home-content .image-banner p {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  margin-top: 1%;
+}
+.home-content .image-banner button {
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 15px 35px;
+  margin-bottom: 7%;
+  margin-top: 2%;
+  text-transform: uppercase;
+}
+.home-content .image-banner button:hover {
+  cursor: pointer;
+  background-color: #811b9b;
+  color: white;
+}
+/* Home - Fim */
+
+/* Produtos - Inicio */
+.products-content {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 2% 0;
+  justify-content: center;
+}
+.products-content div {
+  margin: 1%;
+  height: 250px;
+  width: 375px;
+}
+.products-content div img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  transition: filter 0.5s ease-in-out;
+}
+.products-content div img:hover {
+  filter: brightness(150%);
+}
+.products-content div button {
+  background-color: white;
+  border: none;
+  color: #000;
+  font-size: 1em;
+  text-transform: uppercase;
+  position: relative;
+  margin-left: 30%;
+  bottom: 25%;
+  border-radius: 40px;
+  padding: 10px 30px;
+  outline: none;
+  cursor: pointer;
+}
+.products-content div button:hover {
+  color: #811b9b;
+  background-color: #811b9b;
+  color: white;
+  cursor: pointer;
+}
+/* Produtos - Fim */
+/* Footer - Inicio */
+footer {
+  width: 100%;
+  height: 60px;
+  color: white;
+  background-color: #811b9b;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* Footer - Fim */
+/* -- Media Queries Area Begin -- */
+@media only screen and (max-width: 540px) {
+  body {
+    width: 70vw;
+  }
+
+  header {
+    z-index: 2;
+    height: 10vh;
+  }
+
+  header .container {
+    width: 50%;
+  }
+
+  header .container ul {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+  }
+
+  header .container ul li {
+    display: none;
+  }
+
+  header .container ul .toggle-menu {
+    display: block;
+    font-size: 1.3em;
+
+    text-decoration: none;
+  }
+  header .logo-content {
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  header .logo-content img {
+    width: 20%;
+  }
+
+  .home-content .image-banner {
+    width: 100vw;
+  }
+  .products-content {
+    width: 100vw;
+  }
+  footer {
+    width: 100vw;
+  }
+}
+/* -- Media Queries Area End -- */

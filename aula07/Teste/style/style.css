@@ -1,0 +1,18 @@
+@media (min-width: 200px) {
+  div {
+    font-size: 16px;
+    color: green;
+  }
+}
+@media (min-width: 460px) {
+  div {
+    font-size: 24px;
+    color: red;
+  }
+}
+@media (min-width: 800px) {
+  div {
+    font-size: 32px;
+    color: blue;
+  }
+}

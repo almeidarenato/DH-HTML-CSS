@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		body {
+			font-size: 24px;
+		}
+		div, h1, p, ul {
+			border: 1px dotted rgb(133,13,13);
+			background-color: rgba(222,222,222,0.3);
+		}
+		code {
+			background-color: #343536;
+			color: lightgreen;
+			display: block;
+			padding: 10px;
+			margin: 20px auto 40px auto;
+		}
+		button {
+			background-color: #bb0044;
+			color: #fff;
+			margin: 10px;
+			padding: 10px;
+			font-size: 1.2em;
+			line-height: 1.2em;
+			border-radius: 15px;
+		}
+	</style>
+	<title>Módulo 02 - js | Aula 02 - DOM</title>
+</head>
+<body>
+
+	<button onclick="exibirOcultarCodigos()" style="position: fixed;bottom:50px;right:50px;">Exibir/Ocultar Códigos</button>
+	<script type="text/javascript">
+		function exibirOcultarCodigos(){
+			let codigos = document.querySelectorAll('code')
+			for(let i = 0; i < codigos.length; i++){
+				if(codigos[i].style.display != 'none'){
+					codigos[i].style.display = 'none'
+				} else {
+					codigos[i].style.display = 'block'
+				}
+			}
+		}
+	</script>
+	
+	<div id="cabecalho">
+		
+	</div>
+	<code style="display: none;">
+		<script type="text/javascript">
+			document.querySelector('#cabecalho').nextElementSibling.append('<div id="cabecalho"></div>')
+		</script>
+		<span>&uarr;</span>
+	</code>
+
+	<h1 id="titulo"class="vermelho" >Bem vindo!</h1>
+	<code style="display: block;">
+		<script>
+			document.querySelector('#titulo').nextElementSibling.append('<h1 id="titulo"class="vermelho" >Bem vindo!</h1>')
+		</script>
+		<span>&uarr;</span>
+	</code>
+
+	<p class="vermelho">Esse é o meu site! :)</p>
+	<code style="display: none;">
+		<script>
+		document.querySelector('p.vermelho').nextElementSibling.append('<p class="vermelho">Esse é o meu site! :)</p>')
+		</script>
+		<span>&uarr;</span>
+	</code>
+
+	<ul id="minhaLista">
+		
+	</ul>
+	<code style="display: none;">
+		<script type="text/javascript">
+			document.querySelector('#minhaLista').nextElementSibling.append('<ul id="minhaLista"></ul>')
+			document.
+		</script>
+		<span>&uarr;</span>
+	</code>
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+}
+
+nav {
+  margin-top: 70px;
+  background-color: #ffae00;
+  width: 1340px;
+}
+nav .input-form {
+  border-radius: 21px;
+  padding-left: 10px;
+  font-size: 15px;
+  transition: all 0.8s ease-in-out;
+  outline: 0;
+}
+nav .input-form:focus {
+  border: 2px solid #3c00ff;
+}
+
+nav button {
+  border-radius: 21px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ff0000;
+  color: white;
+}
+
+#logo {
+  position: absolute;
+  width: 200px;
+  margin-top: -65px;
+}
+
+#menu ul {
+  display: inline-block;
+  list-style: none;
+  margin-left: 200px;
+  height: 60px;
+}
+
+#menu ul li {
+  display: inline-block;
+  padding: 15px 0 0 50px;
+}
+
+#menu ul li a {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#menu ul li a:hover {
+  text-decoration: underline;
+}
+#menu ul li a:active {
+  color: black;
+}
+.form {
+  display: inline-block;
+  margin-left: 300px;
+}
+
+#container {
+  width: 960px;
+  height: 650px;
+  margin: 0 auto;
+}
+
+section .product {
+  height: 300px;
+  width: 300px;
+  background-position: center;
+  background-size: cover;
+  background-color: #000000;
+  float: left;
+  margin: 20px 20px 0px 0px;
+
+  box-shadow: 3px 3px 0px -2px #000000, -3px -3px 0px -2px #000000;
+  transition: filter 0.8s ease-in-out;
+}
+section .product:hover {
+  filter: brightness(150%);
+}
+
+section .product-1 {
+  background-image: url("../imagens/product-1.jpg");
+}
+section .product-2 {
+  background-image: url("../imagens/product-2.jpg");
+}
+section .product-3 {
+  background-image: url("../imagens/product-3.jpg");
+}
+section .product-4 {
+  background-image: url("../imagens/product-4.jpg");
+}
+
+section article .img-label {
+  width: 70px;
+  float: right;
+  margin-top: 5px;
+}
+
+section .botao {
+  background-color: #ff0000;
+  border: rgb(255, 245, 245) 1px solid;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  height: 40px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 220px;
+  margin-left: 110px;
+}
+
+section .name-product {
+  color: white;
+  background-color: #00000070;
+  text-align: center;
+  margin-top: 150px;
+  width: 300px;
+  font-size: 20px;
+  position: absolute;
+}
+footer {
+  margin-top: 20px;
+  height: 100px;
+  background-color: #ffae00;
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  border-radius: 10px 10px 0 0;
+  width: 1340px;
+}

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Aula 09 - Bootstrap</title>
+	<!-- CDN do Bootstrap CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+		  <a class="navbar-brand" href="#">Aula 09</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="#exemplo01">Container <span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#exemplo02">Container Fluid</a>
+		      </li>
+		      <li class="nav-item dropdown">
+		        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		          Outros
+		        </a>
+		        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		          <a class="dropdown-item" href="#top">Menu</a>
+		          <a class="dropdown-item" href="#exemplo03a">Container dentro de Container Fluid</a>
+		          <div class="dropdown-divider"></div>
+		          <a class="dropdown-item" href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Documentação Bootstrap</a>
+		        </div>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link disabled" href="#">Disabled</a>
+		      </li>
+		    </ul>
+		    <form class="form-inline my-2 my-lg-0" action="https://digitalhousebr.tucampus.org">
+		      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">primary</button>
+		      <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">secondary</button>
+		      <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">danger</button>
+		      <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">warning</button>
+		      <button class="btn btn-outline-info my-2 my-sm-0" type="submit">info</button>
+		      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">success</button>
+		      <button class="btn btn-outline-light bg-dark my-2 my-sm-0" type="submit">light (com bg-dark)</button>
+		      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">dark</button>
+		    </form>
+		  </div>
+		</nav>
+	</header>
+
+	<span class="clearfix"></span>
+
+	<main class="container" id="exemplo01">
+
+		<h1>Tag H1 posicionada logo após a abertura de <strong>main.container</strong></h1>
+
+		<section class="row">
+
+			<h2><strong>section.row</strong></h2>
+
+			<!-- Ocupa 100% do width do container (12 colunas de 12) -->
+			<article class="col-12">
+				<p><strong>article com atributo class="col-12"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 50% do width do container (6 colunas de 12) -->
+			<article class="col-6">
+				<p><strong>article com atributo class="col-6"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-6">
+				<p><strong>article com atributo class="col-6"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 33% do width do container (4 colunas de 12) -->
+			<article class="col-4">
+				<p><strong>article com atributo class="col-4"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-4">
+				<p><strong>article com atributo class="col-4"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-4">
+				<p><strong>article com atributo class="col-4"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 25% do width do container (3 colunas de 12) -->
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 16,66% do width do container (2 colunas de 12) -->
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+
+
+			<!-- Ocupa 8,33% do width do container (1 coluna de 12) -->
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+
+		</section>
+
+	</main>
+
+	<main class="container-fluid"  id="exemplo02">
+
+		<h1>Tag H1 posicionada logo após a abertura de <strong>main.container-fluid</strong></h1>
+
+		<section class="row">
+
+			<h2><strong>section.row</strong></h2>
+
+			<!-- Ocupa 100% do width do container (12 colunas de 12) -->
+			<article class="col-12">
+				<p><strong>article com atributo class="col-12"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 50% do width do container (6 colunas de 12) -->
+			<article class="col-6">
+				<p><strong>article com atributo class="col-6"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-6">
+				<p><strong>article com atributo class="col-6"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 33% do width do container (4 colunas de 12) -->
+			<article class="col-4">
+				<p><strong>article com atributo class="col-4"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-4">
+				<p><strong>article com atributo class="col-4"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-4">
+				<p><strong>article com atributo class="col-4"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 25% do width do container (3 colunas de 12) -->
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-3">
+				<p><strong>article com atributo class="col-3"</strong> dentro de uma section.row</p>
+			</article>
+
+			<!-- Ocupa 16,66% do width do container (2 colunas de 12) -->
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-2">
+				<p><strong>article com atributo class="col-2"</strong> dentro de uma section.row</p>
+			</article>
+
+
+			<!-- Ocupa 8,33% do width do container (1 coluna de 12) -->
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+			<article class="col-1">
+				<p><strong>article com atributo class="col-1"</strong> dentro de uma section.row</p>
+			</article>
+
+		</section>
+
+	</main>
+
+	<main class="container-fluid" id="exemplo03a">
+
+		<h1>Tag H1 posicionada logo após a abertura de <strong>main.container-fluid</strong></h1>
+
+		<section class="row">
+			
+			<h2><strong>section.row</strong></h2>
+
+			<article class="container" id="exemplo03b">
+				<h3>Article com class container (dentro de uma section.row)</h3>
+				<section class="row">
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 01 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 02 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 03 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 04 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 05 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 06 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 07 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 08 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 09 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 10 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 11 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+					<p class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">Parágrafo 12 com class 'col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2'</p>
+				</section>
+			</article>
+
+		</section>
+
+	</main>
+
+	<!-- CDN do Bootstrap JS (incluindo JQuery e Popper) -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

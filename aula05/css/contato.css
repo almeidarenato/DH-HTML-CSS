@@ -1,0 +1,57 @@
+section h1 {
+  color: black;
+  font-size: 38px;
+}
+section p {
+  color: black;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.form-contato {
+  color: black;
+  margin: 0 auto;
+}
+
+input[type="email"]:focus {
+  color: rgb(93, 144, 185);
+  font-weight: bold;
+}
+section .form-inline {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+section .form-inline div {
+  margin-right: 20px;
+}
+section .form-contato {
+  margin: 0 auto;
+  width: 800px;
+  display: block;
+}
+section .form-contato label {
+  display: block;
+}
+
+section .input-contato {
+  width: 300px;
+  height: 20px;
+}
+
+section .form-inline .textarea-contato {
+  resize: none;
+  width: 630px;
+  display: block;
+}
+section input[type="button"] {
+  width: 100px;
+  height: 30px;
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+  color: rgb(0, 0, 0);
+  background-color: rgb(230, 214, 3);
+  border-radius: 5px;
+  display: block;
+  margin-left: 280px;
+}
